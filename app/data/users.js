@@ -33,6 +33,42 @@ const users = [
       ],
     },
   },
+  {
+    username: "admin",
+    password: "admin123", // In production, use hashed passwords
+    metrics: {
+      users: 1200,
+      income: "$5000",
+      conversion: "2.5%",
+      sessions: 1500,
+      growth: "3.2%"
+    },
+    charts: {
+      lineData: [
+        { name: "Jan", users: 400 },
+        { name: "Feb", users: 300 },
+        { name: "Mar", users: 600 },
+        { name: "Apr", users: 800 },
+        { name: "May", users: 700 },
+        { name: "Jun", users: 900 }
+      ],
+      barData: [
+        { name: "Jan", clicks: 1000 },
+        { name: "Feb", clicks: 1200 },
+        { name: "Mar", clicks: 900 },
+        { name: "Apr", clicks: 1100 },
+        { name: "May", clicks: 1300 },
+        { name: "Jun", clicks: 1000 }
+      ],
+      pieData: [
+        { name: "Direct", value: 400 },
+        { name: "Referral", value: 300 },
+        { name: "Social", value: 200 }
+      ],
+    },
+  },
+
+
 ];
 
 export default users;
