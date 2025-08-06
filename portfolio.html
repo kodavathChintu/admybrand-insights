@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kodavath Chintu's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles for dark/light mode */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+      }
+      .project-card {
+        background-color: #2a2a2a;
+        border: 1px solid #444444;
+      }
+    }
+    @media (prefers-color-scheme: light) {
+      body {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .project-card {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <!-- Header -->
+  <header class="py-6 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-4xl font-bold">Kodavath Chintu</h1>
+      <p class="text-xl mt-2">Frontend Developer | Building Modern Web Applications</p>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-8">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- ADmyBRAND Insights Project -->
+        <div class="project-card rounded-lg shadow-lg p-6">
+          <img
+            src="/and-insights-scradmybreenshot.png"
+            alt="ADmyBRAND Insights Dashboard"
+            class="w-full h-48 object-cover rounded-md mb-4"
+          >
+          <h3 class="text-2xl font-semibold">ADmyBRAND Insights Dashboard</h3>
+          <p class="mt-2">
+            A modern analytics dashboard built with Next.js and Recharts, featuring interactive line, bar, and donut charts, real-time data updates, system-based dark/light mode, and PDF/CSV exports. Fully responsive with robust error handling.
+          </p>
+          <p class="mt-2 font-medium">Tech Stack:</p>
+          <ul class="list-disc list-inside mt-1">
+            <li>Next.js</li>
+            <li>Recharts</li>
+            <li>Tailwind CSS</li>
+            <li>MUI (DatePickers)</li>
+            <li>@tanstack/react-table</li>
+            <li>Deployment: Vercel</li>
+          </ul>
+          <div class="mt-4 flex gap-4">
+            <a
+              href="https://admybrand-insights-556ftb07m-kodavath-chintus-projects.vercel.app"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/kodavath-chintu/admybrand-insights"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+        <!-- Add more project cards here -->
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="py-6 px-4 sm:px-6 lg:px-8 text-center">
+    <p>&copy; 2025 Kodavath Chintu. All rights reserved.</p>
+  </footer>
+</body>
+</html>
